@@ -1,0 +1,184 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : Jan 3, 2020, 3:45:19 PM
+    Author     : Gabriel
+*/
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+.table>thead>tr>th {
+    white-space: nowrap;
+    border-bottom: none;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+
+.al-sidebar {
+    width: 187px;
+    top: 66px;
+    left: 0;
+    z-index: 904;
+    display: block;
+    min-height: 100%;
+    background: linear-gradient(50deg,#d63541, #971720);
+    height: 100%;
+    position: fixed;
+}
+
+.page-top {
+    background: linear-gradient(-132deg,#d63541, #971720);
+    position: fixed;
+    z-index: 904;
+    box-shadow: 2px 0 3px rgba(0, 102, 255, 0.5);
+    height: 66px;
+    width: 100%;
+    min-width: 320px;
+    padding: 0 32px 0 40px;
+}
+a.al-logo {
+    color: #fff;
+    display: block;
+    font-size: 24px;
+    font-family: Roboto,sans-serif;
+    white-space: nowrap;
+    float: left;
+    line-height: 60px;
+}
+
+a.al-sidebar-list-link {
+    display: block;
+    height: 42px;
+    padding-left: 18px;
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 42px;
+    cursor: pointer;
+    color: #fff;
+
+}
+.al-sidebar-list-item {
+    display: block;
+    position: relative;
+    float: none;
+    padding: 0;
+        background-color:  rgba(0, 102, 255, 0.5);
+}
+.sidebar-hover-elem {
+    width: 4px;
+    background: #209e91;
+    position: absolute;
+    top: -150px;
+    left: 176px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transition-property: top,height;
+    transition-property: top,height;
+    height: 42px;
+    display: block;
+}
+body a {
+    color:#ab2f2f;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+.al-sidebar-list-item.selected:not(.with-sub-menu) {
+    background-color: #209e91;
+}
+.al-sidebar-list {
+    margin: 0;
+    padding: 18px 0 0;
+    list-style: none;
+}
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.content-top {
+    padding-top: 13px;
+    padding-bottom: 27px;
+}
+h1.al-title {
+    font-weight: 700;
+    color: #000;
+    float: left;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    opacity: .9;
+}
+.al-breadcrumb {
+    background: 0 0;
+    color: #000;
+    padding: 11px 0 0;
+    margin: 0;
+    float: right;
+}
+
+.al-breadcrumb li {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.al-content {
+    padding: 8px 32px 8px 40px;
+}
+
+.al-main {
+    margin-left: 290px;
+    padding: 66px 0 34px;
+    min-height: 500px;
+}
+
+.panel.panel-blur {
+    background: url(images/fundo1.jpg) fixed;
+    -webkit-transition: none;
+    transition: none;
+}
+
+.panel.medium-panel {
+    height: 400px;
+    width: 900px;
+}
+
+.panel {
+    background-color: rgba(0,0,0,.2);
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 24px;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+}
+.panel>.panel-heading {
+    color: #929292;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.panel>.panel-body {
+    padding: 15px 22px;
+    height: 100%;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
